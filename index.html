@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="style.css"></script>
+<script defer src="bearings.js"></script>
+
+<head>
+    <title>Madlib</title> 
+</head>
+
+<body>
+   <h1>MadLibs WW3</h1>
+	<form>
+        <label for="year">Year:</label>
+		<input type="radio" name="year" value="1985"> 1985
+		<input type="radio" name="year" value="2013"> 2013
+		<input type="radio" name="year" value="2077"> 2077
+		<br>
+
+		
+		<label for="per_name">Name of your choice:</label>
+		<input type="text" id="per_name" name="per_name"><br>
+
+		<label for="firstCountry">Select a first world country:</label>
+		<select id="firstCountry" name="firstCountry">
+			<option value=""></option>
+			<option value="russia">Russia</option>
+			<option value="china">China</option>
+			<option value="united states">United States</option>
+			<option value="canada">Canada</option>
+            <option value="britain">Britain</option>
+		</select>
+        <br>
+        <label for="badCountry">Insert the name of a country you dislike:</label>
+		<input type="text" id="badCountry" name="badCountry"><br>
+        <label for="favCountry">Insert your favorite country:</label>
+		<input type="text" id="favCountry" name="favCountry"><br>
+        
+        <button type="button" onclick="startWW3()">Generate alternate reality </button>
+        </form>
+        <p id="ww3Scenario"></p>
+</body>
